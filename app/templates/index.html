@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Flask-WTF Example</title>
+    </head>
+    <body>
+        <h1>Categories</h1>
+        <ul>
+            {% for category in categories %}
+            <li>{{ category.name }}</li>
+            {% endfor %}
+        </ul>
+        <h1>Form</h1>
+        <form>
+            {{ form.csrf_token }}
+            {{ form.category }}
+        </form>
+    </body>
+</html>
